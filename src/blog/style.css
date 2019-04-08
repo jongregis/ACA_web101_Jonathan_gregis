@@ -1,6 +1,11 @@
 body{
-    background-color:#ccc;
+    background-color: #eee;
 
+}
+header{
+    display: grid;
+    grid-template-columns: 40% 60%;
+    width: 100%;
 }
 
 main{
@@ -10,3 +15,86 @@ main{
     padding: 5px;
 
 }
+.logo{
+    width: 150px;
+    height: 150px;
+    margin: 2% 2%;
+
+}
+
+article:nth-of-type(even) p{
+    color: red;
+
+}
+
+
+a{
+    text-decoration: none;
+    
+}
+
+a:hover{
+    background-color: rgb(143, 140, 140);
+    color: red;
+}
+
+article{
+    padding-left: 5px;
+    
+}
+
+
+
+article:nth-of-type(even){
+    color: blue;
+}
+
+article:nth-of-type(odd){
+    background-color: coral;
+}
+
+article:nth-last-of-type(2), span{
+    color: yellow;
+}
+
+article::first-letter{
+    font-size: 3rem;
+    font-style: italic;
+
+}
+
+article:nth-of-type(4){
+    background-color: darkgreen;
+}
+
+a[href^="https"]{
+    color: lightblue;
+}
+
+
+
+.byLine{
+    font-family: fantasy;
+    color: green;
+}
+
+nav {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    padding-right: 2%;
+  }
+
+  nav > a {
+    margin: 5% 1% 3%;
+    height: 10%;
+    width: 12%;
+    color: white;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 20px;
+    border-radius: 25px;
+    background: transparent;
+    padding: 20px; 
+    text-align: center;
+    border: 2px solid white;
+  }
