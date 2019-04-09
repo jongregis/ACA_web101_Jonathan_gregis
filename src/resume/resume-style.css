@@ -1,0 +1,53 @@
+body{
+    padding-left: 150px;
+    padding-right: 150px;
+}
+
+header{
+    width: auto;
+    text-align: center;
+}
+
+main{
+
+}
+
+h1{
+    padding-top: 20px;
+    font-size: 40px;
+    
+}
+
+h2{
+    background-color: #eee;
+    color: rgb(19, 138, 168);
+    padding: 10px;
+    font-size: 30px;
+
+}
+
+span{
+    font-style: italic;
+    
+}
+
+.comstream{
+    border-top: 2px black dotted
+}
+
+.date{
+    float: right;
+}
+
+h3 .date{
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 50;
+
+
+}
+
+.date{
+    font-style: normal;
+    
+}
