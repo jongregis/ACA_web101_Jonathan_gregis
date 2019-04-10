@@ -10,9 +10,19 @@ header{
 }
 
 #map{
-    width: 20px;
-    height: 20px;
+    width: 15px;
+    height: 15px;
 
+}
+
+#phone{
+    width: 15px;
+    height: 15px;
+}
+
+#email{
+    width: 15px;
+    height: 15px;
 }
 
 
