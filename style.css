@@ -26,6 +26,11 @@ body {
     grid-template-columns: 30% 40% 30%;
   }
   
+  a:hover{
+    background-color: white;
+    color: #286350;
+  }
+
   a{
     text-decoration: none;
   }
@@ -100,4 +105,9 @@ body {
     color: white;
     letter-spacing: 16px;
     font-style: italic;
+  }
+
+  button:hover{
+    background-color: whitesmoke;
+    color: #286350;
   }
