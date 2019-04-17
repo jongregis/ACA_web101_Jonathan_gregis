@@ -1,0 +1,177 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>Dashboard</title>
+    <link rel="stylesheet" href="dashboard-style.css" />
+    <script>
+ // Create a "close" button and append it to each list item
+      var myNodelist = document.getElementsByTagName("LI");
+      var i;
+      for (i = 0; i < myNodelist.length; i++) {
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        myNodelist[i].appendChild(span);
+      }
+
+      // Click on a close button to hide the current list item
+      var close = document.getElementsByClassName("close");
+      var i;
+      for (i = 0; i < close.length; i++) {
+        close[i].onclick = function() {
+          var div = this.parentElement;
+          div.style.display = "none";
+        };
+      }
+
+      // Add a "checked" symbol when clicking on a list item
+      var list = document.querySelector("ul");
+      list.addEventListener(
+        "click",
+        function(ev) {
+          if (ev.target.tagName === "LI") {
+            ev.target.classList.toggle("checked");
+          }
+        },
+        false
+      );
+
+      // Create a new list item when clicking on the "Add" button
+      function newElement() {
+        var li = document.createElement("li");
+        var inputValue = document.getElementById("myInput").value;
+        var t = document.createTextNode(inputValue);
+        li.appendChild(t);
+        if (inputValue === "") {
+          alert(
+            "You need to write something before you can add it to the list!"
+          );
+        } else {
+          document.getElementById("myUL").appendChild(li);
+        }
+        document.getElementById("myInput").value = "";
+
+        var span = document.createElement("SPAN");
+        var txt = document.createTextNode("\u00D7");
+        span.className = "close";
+        span.appendChild(txt);
+        li.appendChild(span);
+
+        for (i = 0; i < close.length; i++) {
+          close[i].onclick = function() {
+            var div = this.parentElement;
+            div.style.display = "none";
+          };
+        }
+      }
+    </script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="greeting">
+            <h1>Welcome Back Jon</h1>
+          <span>get started on your to-do list</span>
+        </div>
+      </div>
+      <div class="main">
+        <div class="clock">12:45:25</div>
+        <div class="calendar">
+          <div class="month">
+            <ul>
+              <li class="prev">&#10094;</li>
+              <li class="next">&#10095;</li>
+              <li>April<br /><span style="font-size:18px">2019</span></li>
+            </ul>
+          </div>
+
+          <ul class="weekdays">
+            <li>Mo</li>
+            <li>Tu</li>
+            <li>We</li>
+            <li>Th</li>
+            <li>Fr</li>
+            <li>Sa</li>
+            <li>Su</li>
+          </ul>
+
+          <ul class="days">
+            <li>1</li>
+            <li>2</li>
+            <li>3</li>
+            <li>4</li>
+            <li>5</li>
+            <li>6</li>
+            <li>7</li>
+            <li>8</li>
+            <li>9</li>
+            <li>10</li>
+            <li>11</li>
+            <li>12</li>
+            <li>13</li>
+            <li>14</li>
+            <li>15</li>
+            <li>16</li>
+            <li>17</li>
+            <li>18</li>
+            <li>19</li>
+            <li><span class="active">20</span></li>
+            <li>21</li>
+            <li>22</li>
+            <li>23</li>
+            <li>24</li>
+            <li>25</li>
+            <li>26</li>
+            <li>27</li>
+            <li>28</li>
+            <li>29</li>
+            <li>30</li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer">
+        <div class="calculator">
+          <input type="number" placeholder="0" />
+          <div class="calculator-buttons">
+            <button class="calc-buttons is-clear">C</button>
+            <button class="calc-buttons">&divide;</button>
+            <button class="calc-buttons">7</button>
+            <button class="calc-buttons">8</button>
+            <button class="calc-buttons">9</button>
+            <button class="calc-buttons">&times;</button>
+            <button class="calc-buttons">4</button>
+            <button class="calc-buttons">5</button>
+            <button class="calc-buttons">6</button>
+            <button class="calc-buttons">&minus;</button>
+            <button class="calc-buttons">1</button>
+            <button class="calc-buttons">2</button>
+            <button class="calc-buttons">3</button>
+            <button class="calc-buttons">&plus;</button>
+            <button class="calc-buttons is-zero">0</button>
+            <button class="calc-buttons">&equals;</button>
+          </div>
+        </div>
+      </div>
+      <div class="sidebar">
+        <div id="myDIV" class="header-two">
+          <h2>My To-Do</h2>
+          <input type="text" id="myInput" placeholder="Title" />
+          <span onclick="newElement()" class="addBtn">Add</span>
+        </div>
+
+        <ul id="myUL">
+          <li>Hit the gym</li>
+          <li class="checked">Code</li>
+          <li>Walk the dogs</li>
+          <li>Code more</li>
+          <li>Go shopping</li>
+          <li>Code some more</li>
+        </ul>
+      </div>
+    </div>
+  </body>
+</html>
