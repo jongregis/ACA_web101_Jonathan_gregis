@@ -64,7 +64,6 @@ ul {
   list-style-type: none;
 }
 
-/* Month header */
 .month {
   padding: 70px 25px;
   width: auto;
@@ -72,7 +71,6 @@ ul {
   text-align: center;
 }
 
-/* Month list */
 .month ul {
   margin: 0;
   padding: 0;
@@ -85,19 +83,16 @@ ul {
   letter-spacing: 3px;
 }
 
-/* Previous button inside month header */
 .month .prev {
   float: left;
   padding-top: 10px;
 }
 
-/* Next button */
 .month .next {
   float: right;
   padding-top: 10px;
 }
 
-/* Weekdays (Mon-Sun) */
 .weekdays {
   margin: 0;
   padding: 10px 0;
@@ -111,7 +106,6 @@ ul {
   text-align: center;
 }
 
-/* Days (1-31) */
 .days {
   padding: 10px 0;
   background: #eee;
@@ -128,7 +122,6 @@ ul {
   color: #777;
 }
 
-/* Highlight the "current" day */
 .days li .active {
   padding: 5px;
   background: #1d1abca8;
@@ -180,7 +173,6 @@ ul li.checked::before {
   width: 7px;
 }
 
-/* Style the close button */
 .close {
   position: absolute;
   right: 0;
@@ -193,7 +185,6 @@ ul li.checked::before {
   color: white;
 }
 
-/* Style the header */
 .header-two {
   background-color: #550ae4;
   padding: 30px 40px;
@@ -206,14 +197,12 @@ ul li.checked::before {
   margin-top: -20px;
 }
 
-/* Clear floats after the header */
 .header-two:after {
   content: "";
   display: table;
   clear: both;
 }
 
-/* Style the input */
 input {
   box-shadow: 1px 5px 5px 0 black;
   margin: 0;
@@ -225,7 +214,6 @@ input {
   font-size: 16px;
 }
 
-/* Style the "Add" button */
 .addBtn {
   box-shadow: 1px 5px 5px 0 black;
   padding: 10px;
