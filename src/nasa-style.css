@@ -1,0 +1,40 @@
+body {
+  width: 850px;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 450px;
+  background-image: url(galaxy.jpg);
+}
+
+.title h1 {
+  color: white;
+  font-size: 60px;
+}
+
+main {
+  margin-top: 20px;
+  background-color: rgb(177, 174, 174);
+  height: 324px;
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+.social-media {
+  padding: 20px;
+  width: 270px;
+}
+
+.info {
+  width: 270px;
+  padding: 20px;
+}
+
+.contact {
+  width: 270px;
+  padding: 20px;
+}
