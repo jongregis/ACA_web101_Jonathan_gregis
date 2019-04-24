@@ -1,0 +1,82 @@
+body {
+  margin: 0;
+}
+
+header {
+  margin-top: 50px;
+  margin-bottom: 50px;
+  text-align: center;
+}
+
+nav {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+header a {
+  margin: 0 20px;
+  color: black;
+  font-weight: bold;
+}
+
+/* this is where the main section starts--------------------------------------------- */
+
+.banner {
+  display: block;
+  position: relative;
+}
+.info {
+  display: block;
+  width: 490px;
+  text-align: left;
+  left: 50%;
+  top: 50%;
+  margin-left: -480px;
+  position: absolute;
+  margin-top: -171px;
+  padding: 0 0 0 470px;
+}
+
+.banner img {
+  display: block;
+  width: 100%;
+}
+
+.info h2 {
+  background-color: white;
+
+  padding: 20px 20px;
+}
+
+.info h3 {
+  background-color: black;
+  color: white;
+  padding: 10px 20px;
+}
+
+.info button {
+  background-color: rgb(30, 146, 146);
+  font-size: 1em;
+  color: whitesmoke;
+  padding: 25px;
+}
+/* this is where the footer starts ------------------------------------------------ */
+
+footer {
+  background-color: #000000;
+  height: 150px;
+  width: 100%vw;
+  margin-bottom: 50px;
+}
+
+footer span {
+  display: flex;
+  align-items: center;
+  color: white;
+}
+
+.social-media {
+  display: flex;
+  align-content: left;
+}
