@@ -11,13 +11,18 @@ header {
 nav {
   display: flex;
   justify-content: center;
+  flex-wrap: wrap;
   margin-top: 50px;
 }
 
 header a {
+  text-decoration: none;
   margin: 0 20px;
   color: black;
-  font-weight: bold;
+  font-weight: bolder;
+}
+header a:hover {
+  color: rgb(30, 146, 146);
 }
 
 /* this is where the main section starts--------------------------------------------- */
@@ -45,21 +50,42 @@ header a {
 
 .info h2 {
   background-color: white;
-
+  display: inline-block;
   padding: 20px 20px;
 }
 
 .info h3 {
+  margin: 7px 0;
+  display: inline-block;
   background-color: black;
   color: white;
   padding: 10px 20px;
 }
 
 .info button {
+  margin-top: 15px;
+  display: inline-block;
   background-color: rgb(30, 146, 146);
   font-size: 1em;
   color: whitesmoke;
   padding: 25px;
+}
+button:hover {
+  background-color: rgb(31, 196, 196);
+}
+
+.haircut-photos {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  text-align: center;
+  margin-top: 35px;
+  margin-bottom: 40px;
+}
+
+.haircut img {
+  border: 2px solid black;
+  margin: 10px;
 }
 /* this is where the footer starts ------------------------------------------------ */
 
@@ -72,11 +98,108 @@ footer {
 
 footer span {
   display: flex;
-  align-items: center;
+  justify-content: flex-start;
+  margin-left: 200px;
+
   color: white;
+  position: absolute;
 }
 
-.social-media {
+.icons {
   display: flex;
-  align-content: left;
+  justify-content: flex-end;
+  margin-right: 200px;
+}
+
+footer img {
+  padding: 4px;
+  height: 35px;
+  width: 35px;
+  background-color: white;
+  float: right;
+  margin-right: 20px;
+  margin-top: 50px;
+  border-radius: 10%;
+}
+
+/* -----------------------------------------media starts here--------------------------------------------- */
+
+@media (max-width: 500px) {
+  .banner {
+    display: block;
+    position: relative;
+  }
+  .info {
+    display: block;
+    width: 300px;
+    text-align: center;
+    left: 50%;
+    top: 50%;
+    margin-left: -420px;
+    position: static;
+    margin-top: 20px;
+    padding: 0 0 0 470px;
+  }
+
+  .banner img {
+    display: block;
+    width: 100%;
+  }
+
+  .info h2 {
+    background-color: white;
+    display: inline-block;
+    padding: 20px 20px;
+  }
+
+  .info h3 {
+    margin: 7px 0;
+    display: inline-block;
+    background-color: black;
+    color: white;
+    padding: 10px 20px;
+  }
+
+  .info button {
+    margin-top: 15px;
+    display: inline-block;
+    background-color: rgb(30, 146, 146);
+    font-size: 1em;
+    color: whitesmoke;
+    padding: 25px;
+  }
+
+  .haircut-photos {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    text-align: center;
+    margin-top: 35px;
+    margin-bottom: 40px;
+  }
+
+  .haircut img {
+    border: 2px solid black;
+    margin: 10px;
+  }
+
+  /* -------------------------------------footer-------------- */
+
+  footer {
+    background-color: #000000;
+    height: 150px;
+    width: 100%;
+  }
+
+  footer span {
+    text-align: center;
+    margin-left: 50px;
+    margin-top: 20px;
+  }
+
+  .icons {
+    display: flex;
+    justify-content: center;
+    margin-left: 200px;
+  }
 }
