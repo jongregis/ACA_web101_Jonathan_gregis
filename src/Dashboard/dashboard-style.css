@@ -1,7 +1,7 @@
 .container {
   display: grid;
   grid-template-columns: 30% 1fr 1fr;
-  grid-template-rows: 200px 1fr 1fr;
+  grid-template-rows: 200px 1fr 1fr 5%;
   grid-template-areas:
     "sidebar header header"
     "sidebar main main"
@@ -10,8 +10,9 @@
 
 .header {
   border-bottom: none;
-  border: 1px solid black;
+
   grid-area: header;
+  background-color: #c4c4c4;
 }
 
 .main {
@@ -20,6 +21,7 @@
 }
 
 .clock {
+  border-radius: 10px;
   box-shadow: 1px 5px 5px 0 black;
   margin: auto;
   width: 250px;
@@ -47,6 +49,13 @@
 .greeting h1 {
   font-size: 40px;
   padding-left: 10px;
+  text-decoration: underline;
+}
+
+.greeting span {
+  font-style: italic;
+  margin-left: 10%;
+  font-size: 20px;
 }
 
 /* this is the calender section------------------------------------------- */
@@ -59,7 +68,7 @@ ul {
 .month {
   padding: 70px 25px;
   width: auto;
-  background: #5509e4;
+  background: #550ae4;
   text-align: center;
 }
 
@@ -186,7 +195,7 @@ ul li.checked::before {
 
 /* Style the header */
 .header-two {
-  background-color: lightseagreen;
+  background-color: #550ae4;
   padding: 30px 40px;
   color: white;
   text-align: center;
@@ -244,18 +253,19 @@ input {
   margin: 0 auto;
   margin-top: 10px;
   border: 2px solid #111;
-  border-radius: 5px;
+  border-radius: 10px;
   margin-bottom: 10px;
   box-shadow: 1px 5px 5px 0 black;
 }
 
 .calculator input {
+  border-radius: 5px;
   text-align: right;
   font-size: 40px;
-  background: none;
+  background: #d1cfd4;
   border: none;
-  box-shadow: none;
-  width: 100%;
+  box-shadow: 0 5px 5px 0 black;
+  width: 93%;
   border-bottom: 2px solid #111;
 }
 
@@ -267,6 +277,7 @@ input {
   border-radius: 5px;
   font-size: 22px;
   cursor: pointer;
+  box-shadow: 0 3px 3px 0 black;
 }
 
 .calculator-buttons {
@@ -279,4 +290,58 @@ input {
 .is-clear,
 .is-zero {
   grid-column: span 3;
+}
+
+/* Media queries start here------------------------------------------------------ */
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 175px 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+  .greeting h1 {
+    text-align: center;
+    font-size: 40px;
+    /* padding-left: 10px; */
+    text-decoration: underline;
+  }
+
+  .greeting span {
+    text-align: center;
+    font-style: italic;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 175px 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+
+  .greeting h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 10px;
+    text-decoration: underline;
+  }
+
+  .greeting span {
+    font-style: italic;
+    margin-left: 27%;
+    font-size: 20px;
+  }
 }
