@@ -7,7 +7,7 @@ header {
   justify-content: center;
   align-items: center;
   height: 450px;
-  background-image: url(galaxy.jpg);
+  background-image: url(../images/galaxy.jpg);
 }
 
 .title h1 {
