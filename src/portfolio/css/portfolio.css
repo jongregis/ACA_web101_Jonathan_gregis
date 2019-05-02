@@ -1,5 +1,12 @@
 body {
-  background-color: rgba(185, 174, 174, 0.733);
+  background-color: white;
+  font-family: helvetica neue;
+}
+
+.container {
+  background-color: whitesmoke;
+  padding: 30px;
+  box-shadow: 0 0 5px 1px rgb(116, 82, 82);
 }
 header {
   text-align: center;
@@ -9,8 +16,11 @@ header h1 {
   font-size: 3em;
 }
 header span {
+  font-style: italic;
 }
-
+main {
+  margin-bottom: 100px;
+}
 main h2 {
   text-align: center;
   margin: 100px 0;
@@ -20,6 +30,22 @@ main h2 {
 .banner {
   display: flex;
 }
+video {
+  margin-left: 20px;
+  box-shadow: 0 5px 5px 1px black;
+}
+
+iframe {
+  box-shadow: 0 5px 5px 1px black;
+}
+
+/* .spacer {
+  display: flex;
+  justify-content: center;
+  width: 300px;
+  height: 50px;
+  border: 1px solid gray;
+} */
 
 .all-projects {
   display: flex;
@@ -28,9 +54,17 @@ main h2 {
 }
 
 .project {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   width: 250px;
   height: 250px;
+  box-shadow: 0 5px 5px 1px black;
+}
+.project-title {
+  width: 250px;
+  height: 250px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 .need-work {
   text-align: left;
@@ -42,7 +76,7 @@ main h2 {
 }
 
 .need-work span:nth-child(1) {
-  font-size: 30px;
+  font-size: 40px;
 }
 aside {
   display: flex;
@@ -57,15 +91,39 @@ form {
   width: 50%;
   display: flex;
   flex-direction: column;
-  color: red;
+  color: rgb(95, 95, 95);
   border: 1px solid black;
-  margin-bottom: 50px;
+  margin-bottom: 100px;
+  box-shadow: 0 5px 5px 1px black;
+}
+input {
+  background-color: whitesmoke;
+}
+input:focus {
+  content: normal;
 }
 
 form span {
   margin: 5px 0;
 }
+.button {
+  margin: 5px;
+  border-radius: 50%;
+  height: 20px;
+  width: 70px;
+  background-color: black;
+  color: white;
+}
 
+/* ---------------------------------------------------footer----------- */
 footer {
-  border: 1px solid black;
+}
+.icons {
+  text-align: center;
+}
+
+.icons img {
+  margin: 0 5px;
+  width: 50px;
+  height: 50px;
 }

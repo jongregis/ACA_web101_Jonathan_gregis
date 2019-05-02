@@ -7,6 +7,8 @@
     <title>Portfolio | Jon Gregis</title>
     <link rel="stylesheet" href="css/portfolio.css" />
     <link rel="icon" href="images/favicon.ico" type="image/x-icon" />
+
+    <script src="./portfolio.js"></script>
   </head>
   <body>
     <div class="container">
@@ -17,8 +19,8 @@
       <div class="banner">
         <iframe
           width="50%"
-          height="300px"
-          src="https://www.youtube.com/embed/xBy-zkYkkq8"
+          height="315"
+          src="https://www.youtube.com/embed/IIHYwbCbOJU"
           frameborder="0"
           allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture"
           allowfullscreen
@@ -26,10 +28,11 @@
         <video
           src="videos/VID-20181104-WA0005.mp4"
           width="50%"
-          height="300px"
+          height="315px"
           controls
         ></video>
       </div>
+      <div class="spacer"></div>
       <!-- -----------------------------------------main----------------------------------------- -->
       <main>
         <h2>Current Work</h2>
@@ -52,18 +55,21 @@
           </div>
         </div>
       </main>
+      <!-- -----------------------------------------form----------------------------------------- -->
       <aside>
         <div class="need-work">
-          <span>Need Some Work Done?</span><br />
+          <span>Need A Website?</span><br />
           <span>Lets Talk</span>
         </div>
         <form>
           <span>Email:</span>
           <input
             type="text"
+            class="write"
             name="email"
             id="email"
             placeholder="Email"
+            data-aos="fade-right"
             required
           />
           <span>Name:</span>
@@ -89,18 +95,17 @@
             rows="10"
             placeholder="Message..."
           ></textarea>
-          <input type="button" value="Reset" />
-          <input type="button" value="Submit" />
+          <input type="button" class="button" value="Reset" />
+          <input type="button" class="button" value="Submit" />
         </form>
       </aside>
       <footer>
         <div class="icons">
-          <img src="images/twitter-logo-silhouette.svg" alt="twitter" />
-          <img src="images/facebook-letter-logo.svg" alt="facebook" />
-          <img src="images/google-plus-symbol.svg" alt="google plus" />
-          <img src="images/pinterest-logo.svg" alt="pinterest" />
+          <img src="images/instagram-logo.svg" alt="instagram" />
+          <img src="images/facebook-logo-button.svg" alt="facebook" />
+          <img src="images/linkedin-logo-button.svg" alt="linkedin" />
+          <img src="images/github-logo.svg" alt="GitHub" />
         </div>
-        <span>Copyright 2019 All Rights Reserved</span>
       </footer>
     </div>
   </body>
