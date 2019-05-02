@@ -1,0 +1,71 @@
+body {
+  background-color: rgba(185, 174, 174, 0.733);
+}
+header {
+  text-align: center;
+  margin: 100px 0;
+}
+header h1 {
+  font-size: 3em;
+}
+header span {
+}
+
+main h2 {
+  text-align: center;
+  margin: 100px 0;
+  font-size: 2.5em;
+}
+
+.banner {
+  display: flex;
+}
+
+.all-projects {
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-between;
+}
+
+.project {
+  border: 1px solid black;
+  width: 250px;
+  height: 250px;
+}
+.need-work {
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  width: 50%;
+}
+
+.need-work span:nth-child(1) {
+  font-size: 30px;
+}
+aside {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+}
+
+form {
+  border-radius: 10%;
+  padding: 15px;
+  margin-top: 50px;
+  width: 50%;
+  display: flex;
+  flex-direction: column;
+  color: red;
+  border: 1px solid black;
+  margin-bottom: 50px;
+}
+
+form span {
+  margin: 5px 0;
+}
+
+footer {
+  border: 1px solid black;
+}
