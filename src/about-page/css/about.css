@@ -1,0 +1,72 @@
+body {
+  font-family: sans-serif;
+  line-height: 2;
+}
+
+header {
+  border: 1px solid black;
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  margin-top: 100px;
+}
+header h1 {
+  font-size: 50px;
+}
+.header-content {
+  border: 1px solid black;
+  width: 600px;
+}
+.spacer {
+  display: flex;
+  justify-content: center;
+}
+.spacer div {
+  border: 2px solid black;
+  width: 50px;
+  margin-bottom: 30px;
+}
+header img {
+  float: left;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+/* -----------------------------------------media container */
+
+.media-container {
+  border: 1px solid black;
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+}
+.social-media {
+  border: 1px solid black;
+  max-width: 300px;
+  padding: 30px;
+  margin: 0 15px;
+}
+.social-media img {
+  height: 75px;
+  width: 75px;
+  margin-top: 20px;
+}
+.social-media h3 {
+  font-size: 30px;
+}
+/* -----------------------------------------main */
+
+main h2 {
+  text-align: center;
+}
+.story {
+  display: flex;
+  justify-content: center;
+}
+
+.story p {
+  width: 400px;
+}
