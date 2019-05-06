@@ -72,18 +72,35 @@ iframe {
   /* border: 1px solid black; */
   width: 250px;
   height: 250px;
-  box-shadow: 0 5px 5px 1px black;
+  box-shadow: 0 5px 5px 1px rgb(180, 176, 176);
 }
 .project:hover {
   filter: brightness(50%);
 }
 .project-title {
+  color: white;
   width: 250px;
   height: 250px;
   display: flex;
-  align-items: center;
+  align-items: flex-start;
   justify-content: center;
-  font-size: 20px;
+  font-size: 30px;
+}
+#blog {
+  background-image: url(../images/blog.png);
+  background-size: 100% 100%;
+}
+#nasa {
+  background-image: url(../images/nasa.jpeg);
+  background-size: 100% 100%;
+}
+#hair {
+  background-image: url(../images/barber.jpg);
+  background-size: 100% 100%;
+}
+#resume {
+  background-image: url(../images/resume.png);
+  background-size: 100% 100%;
 }
 .need-work {
   text-align: left;
@@ -104,6 +121,7 @@ aside {
   display: flex;
   flex-direction: row;
   justify-content: flex-end;
+  border-top: 1px solid black;
 }
 
 form {
@@ -135,6 +153,9 @@ form span {
   width: 70px;
   background-color: black;
   color: white;
+}
+.button:hover {
+  filter: invert(100%);
 }
 
 /* ---------------------------------------------------footer----------- */
@@ -170,7 +191,7 @@ footer {
   }
   header {
     text-align: center;
-    margin: 100px 0;
+    margin: 50px 0;
   }
   header h1 {
     font-size: 3em;
@@ -210,9 +231,16 @@ footer {
     height: 50px;
     border-bottom: 1px solid rgb(207, 204, 204);
     margin-left: 300px;
-    margin-top: 100px;
+    margin-top: 50px;
   }
   .spacer-two {
+    display: flex;
+    justify-content: flex-start;
+    width: 700px;
+    height: 50px;
+    border-bottom: 1px solid rgb(207, 204, 204);
+    margin-left: 300px;
+    margin-top: 50px;
   }
 
   .all-projects {
