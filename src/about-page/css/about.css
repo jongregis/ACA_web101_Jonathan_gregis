@@ -1,0 +1,126 @@
+body {
+  font-family: sans-serif;
+  line-height: 2;
+  margin: 0;
+}
+
+header {
+  /* border: 1px solid black; */
+  background: rgba(255, 0, 0, 0.788);
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+header p {
+  color: rgba(240, 211, 211, 0.774);
+}
+header h1 {
+  color: white;
+  font-size: 50px;
+}
+.header-content {
+  /* border: 1px solid black; */
+
+  width: 600px;
+}
+.spacer {
+  display: flex;
+  justify-content: center;
+}
+.spacer div {
+  border: 2px solid white;
+  width: 50px;
+  margin-bottom: 30px;
+}
+header img {
+  float: left;
+  width: 175px;
+  height: 175px;
+  border-radius: 50%;
+}
+/* -----------------------------------------media container */
+
+.media-container {
+  /* border: 1px solid black; */
+  background: rgba(255, 0, 0, 0.788);
+  margin-top: 100px;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+  padding: 100px 0;
+  /* border-radius: 0 0 25% 25%; */
+}
+svg {
+  width: 100%;
+}
+.social-media {
+  border: 1px solid gray;
+  box-shadow: 0 5px 5px 1px rgb(46, 43, 43);
+  background: white;
+  transform: rotate(-10deg);
+  max-width: 300px;
+  padding: 30px;
+  margin: 0 15px;
+  border-radius: 2%;
+}
+.social-media:hover {
+  box-shadow: 0 5px 15px 1px rgb(46, 43, 43);
+}
+.social-media img {
+  height: 75px;
+  width: 75px;
+  margin-top: 20px;
+}
+.social-media h3 {
+  font-size: 30px;
+}
+.social-media span {
+  color: gray;
+}
+/* -----------------------------------------main */
+
+main h2 {
+  text-align: center;
+}
+.story {
+  display: flex;
+  justify-content: center;
+}
+
+.story p {
+  width: 400px;
+  margin: 0 10px;
+}
+main {
+  padding: 100px 0;
+}
+
+/* --------------------------------------------footer */
+footer {
+  background: #ff3e41;
+  border-radius: 25% 25% 0 0 / 10%;
+  padding-top: 100px;
+}
+footer address {
+  padding-left: 5px;
+  text-align: center;
+}
+.search-container {
+  padding: 6px 10px;
+  margin-top: 8px;
+  margin-right: 16px;
+
+  font-size: 17px;
+  border: none;
+  cursor: pointer;
+  text-align: center;
+}
+.topnav input[type="text"] {
+  padding: 6px;
+  margin-top: 8px;
+  font-size: 17px;
+  border: none;
+}
