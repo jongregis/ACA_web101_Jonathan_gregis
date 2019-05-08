@@ -1,13 +1,16 @@
 body {
   margin: 0;
+  font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
 }
 header {
   background: #ff3e41;
+  margin: -33.5px;
 }
 h1 {
   text-align: center;
   padding: 100px 0;
   color: white;
+  font-size: 50px;
 }
 /* -------------------------------main */
 
@@ -15,10 +18,34 @@ main {
   padding: 100px 0;
   display: flex;
   justify-content: space-around;
+  flex-wrap: wrap;
   background: rgb(233, 229, 229);
 }
 .question-container {
-  border: 1px solid black;
+  display: flex;
+  flex-direction: column;
+  /* border: 1px solid black; */
+  justify-content: center;
+  align-items: center;
+  width: 400px;
+}
+.question-container h2 {
+  font-size: 35px;
+}
+.question-container span {
+  margin-bottom: 25px;
+}
+.info-container li {
+  margin: 25px 0;
+}
+#email {
+  font-size: 25px;
+}
+#phone {
+  font-size: 25px;
+}
+#map {
+  font-size: 25px;
 }
 input[type="text"],
 select,
@@ -57,6 +84,7 @@ form {
   padding-right: 60px;
   background: white;
   border-radius: 1%;
+  width: 500px;
 }
 ul img {
   height: 20px;
@@ -75,7 +103,7 @@ ul {
   height: 200px;
   width: 200px;
   background: white;
-  margin-left: 20px;
+  margin-left: 50px;
   padding: 15px;
   box-shadow: 0 0 15px 1px rgb(95, 93, 93);
 }
@@ -90,19 +118,36 @@ ul {
   padding-top: 40px;
   text-align: center;
 }
+.address-container button:hover {
+  color: #ff3e41;
+}
 
 footer {
+  background: #ff3e41;
 }
 .icons {
   text-align: center;
-  margin-top: 150px;
+  padding: 50px 0;
 }
 
 .icons img {
+  filter: invert(100%);
   margin: 0 5px;
   width: 50px;
   height: 50px;
 }
 .icons img:hover {
   filter: invert(50%);
+}
+/* ------------------------------------media */
+
+@media (max-width: 450px) {
+  form {
+    box-shadow: 0 0 5px 1px rgb(180, 175, 175);
+    padding: 40px;
+    padding-right: 60px;
+    background: white;
+    border-radius: 1%;
+    width: 275px;
+  }
 }
