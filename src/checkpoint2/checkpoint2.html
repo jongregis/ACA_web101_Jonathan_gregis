@@ -10,16 +10,41 @@
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
     />
     <link rel="stylesheet" href="css/checkpoint2.css" />
+    <link
+      href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Barcode+128+Text|Nanum+Myeongjo"
+      rel="stylesheet"
+    />
   </head>
   <body>
     <header>
+      <img class="tada animated" src="images/5673-200.png" alt="bee-logo" />
       <nav>
-        <a href="#">Home</a>
-        <a href="#">Articles</a>
-        <a href="#">Learn More</a>
+        <div class="svg-wrapper">
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+          </svg>
+          <a href="#"><div class="text">Home</div></a>
+        </div>
+        <div class="svg-wrapper">
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+          </svg>
+          <a href="#"><div class="text">Articles</div></a>
+        </div>
+        <div class="svg-wrapper">
+          <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
+            <rect class="shape" height="60" width="320" />
+          </svg>
+          <a href="#"><div class="text">Learn More</div></a>
+        </div>
       </nav>
     </header>
     <main>
+      <div class="company-container">
+        <img src="images/honeycomb.png" alt="" />
+        <span class="company-name">Hive Pharmaceuticals</span><br />
+        <span><em>Trust us, because we know whats best for you...</em></span>
+      </div>
       <ul id="grid" class="clear">
         <li>
           <div class="hexagon"></div>
@@ -28,18 +53,71 @@
           <div class="hexagon"></div>
         </li>
         <li>
-          <div class="hexagon"></div>
+          <div class="hexagon" id="one"></div>
+        </li>
+        <li>
+          <div class="hexagon" id="two"></div>
         </li>
         <li>
           <div class="hexagon"></div>
         </li>
         <li>
           <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon"></div>
+        </li>
+        <li>
+          <div class="hexagon" id="three"></div>
         </li>
         <li>
           <div class="hexagon"></div>
         </li>
       </ul>
     </main>
+    <div class="spacer">
+      <img
+        class="arrow animated pulse infinite"
+        src="images/down-arrow.svg"
+        alt=""
+      /><br />
+      <span>Our Research</span>
+    </div>
+
+    <article>
+      <div class="article-container">
+        <div class="article-wrapper">
+          <img id="chicken" src="images/chicken.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Ipsam
+            assumenda iste quos reprehenderit, voluptate deleniti laborum
+            dolores repellat iure corrupti exercitationem, asperiores iusto
+            laboriosam sint nesciunt sit natus excepturi eveniet.
+          </p>
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="article-wrapper">
+          <img src="images/surprised-chemists.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit.
+            Dignissimos harum molestias deleniti iusto incidunt minus amet
+            eaque, laborum tempore corrupti consequuntur quas non magnam,
+            laboriosam accusamus doloremque alias! Molestias, dolore!
+          </p>
+        </div>
+      </div>
+      <div class="article-container">
+        <div class="article-wrapper">
+          <img src="images/crazy-eyes.jpg" alt="" />
+          <p>
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Cum
+            corporis mollitia dolore, rerum molestiae illo? Laudantium qui nulla
+            saepe consequatur, hic ex fugit dolor reprehenderit accusantium
+            dolores, doloribus optio aspernatur?
+          </p>
+        </div>
+      </div>
+    </article>
   </body>
 </html>
