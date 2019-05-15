@@ -4,7 +4,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <meta http-equiv="X-UA-Compatible" content="ie=edge" />
-    <title>Pharmaceuticals</title>
+    <title>Hive Pharmaceuticals</title>
     <link
       rel="stylesheet"
       href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.7.0/animate.min.css"
@@ -14,6 +14,7 @@
       href="https://fonts.googleapis.com/css?family=Crimson+Text|Libre+Barcode+128+Text|Nanum+Myeongjo"
       rel="stylesheet"
     />
+    <link rel="icon" href="images/honeycomb.ico" type="image/x-icon" />
   </head>
   <body>
     <header>
@@ -29,13 +30,13 @@
           <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="60" width="320" />
           </svg>
-          <a href="#"><div class="text">Articles</div></a>
+          <a href="./articles.html"><div class="text">Articles</div></a>
         </div>
         <div class="svg-wrapper">
           <svg height="60" width="320" xmlns="http://www.w3.org/2000/svg">
             <rect class="shape" height="60" width="320" />
           </svg>
-          <a href="#"><div class="text">Learn More</div></a>
+          <a href="./learn-more.html"><div class="text">Learn More</div></a>
         </div>
       </nav>
     </header>
@@ -80,7 +81,9 @@
         class="arrow animated pulse infinite"
         src="images/down-arrow.svg"
         alt=""
-      /><br />
+      />
+    </div>
+    <div class="research">
       <span>Our Research</span>
     </div>
 
@@ -119,5 +122,69 @@
         </div>
       </div>
     </article>
+    <div id="sidebar">
+      <div class="social facebook">
+        <a href=" https://www.facebook.com " target="_blank">
+          <p>Like on Facebook <i class="fa fa-facebook "></i></p>
+        </a>
+      </div>
+      <div class="social twitter">
+        <a href=" https://www.twitter.com " target="_blank">
+          <p>Follow on Twitter<i class="fa fa-twitter"></i></p>
+        </a>
+      </div>
+      <div class="social google">
+        <a href=" https://www.plus.google.com " target="_blank">
+          <p>&nbspAdd on Google+<i class="fa fa-google-plus"></i></p>
+        </a>
+      </div>
+
+      <div class="social linkedin">
+        <a href=" https://www.linkedin.com " target="_blank">
+          <p>Connect on LinkedIn<i class="fa fa-linkedin"></i></p>
+        </a>
+      </div>
+    </div>
+    <footer>
+      <div class="products">
+        <h3>Products</h3>
+        <span>Product 1</span>
+        <span>Product 2</span>
+        <span>Product 3</span>
+        <span>Product 4</span>
+        <span>Product 5</span>
+      </div>
+      <div class="pages">
+        <h3>Pages</h3>
+        <a href="">Home</a>
+        <a href="">Learn More</a>
+        <a href="">Contact</a>
+      </div>
+      <div class="register">
+        <section class="widget widget_blog_subscription">
+          <form
+            action="#"
+            method="post"
+            accept-charset="utf-8"
+            id="subscribe-blog"
+          >
+            <p>Subscribe to our newsletter.</p>
+            <p>
+              <input
+                type="text"
+                name="email"
+                style="width: 95%; padding: 1px 2px"
+                placeholder="Enter your email address"
+                value=""
+                id="subscribe-field"
+              />
+            </p>
+            <p>
+              <input type="submit" value="Follow Us" />
+            </p>
+          </form>
+        </section>
+      </div>
+    </footer>
   </body>
 </html>

@@ -1,0 +1,73 @@
+body {
+  margin: 0;
+  background: rgba(15, 15, 226, 0.76);
+  font-family: "Nanum Myeongjo", serif;
+}
+a {
+  text-decoration: none;
+  color: whitesmoke;
+}
+header {
+  border: 1px solid black;
+  position: relative;
+  margin-bottom: 30px;
+
+  width: 100%;
+  box-shadow: 0 0 5px 1px rgb(6, 6, 92);
+}
+header nav {
+  width: 100%;
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+}
+header img {
+  position: relative;
+  top: 30px;
+  height: 60px;
+  width: 60px;
+  filter: invert(90%);
+}
+.svg-wrapper {
+  height: 60px;
+  margin: 0 auto;
+  position: relative;
+  top: 50%;
+  transform: translateY(-50%);
+  width: 320;
+}
+.shape {
+  fill: transparent;
+  stroke-dasharray: 140 540;
+  stroke-dashoffset: -474;
+  stroke-width: 8px;
+  stroke: #dac614;
+}
+.text {
+  font-family: "Libre Barcode 128 Text", cursive;
+  color: #fff;
+  text-align: center;
+
+  font-size: 40px;
+
+  position: relative;
+  top: -48px;
+}
+@keyframes draw {
+  0% {
+    stroke-dasharray: 140 540;
+    stroke-dashoffset: -474;
+    stroke-width: 8px;
+  }
+  100% {
+    stroke-dasharray: 760;
+    stroke-dashoffset: 0;
+    stroke-width: 2px;
+  }
+}
+
+.svg-wrapper:hover .shape {
+  -webkit-animation: 0.5s draw linear forwards;
+  animation: 0.5s draw linear forwards;
+}
