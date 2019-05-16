@@ -102,6 +102,10 @@ iframe {
   background-image: url(../images/resume.png);
   background-size: 100% 100%;
 }
+#hive {
+  background-image: url(../images/honeycomb.png);
+  background-size: 100% 100%;
+}
 .need-work {
   text-align: left;
   display: flex;
