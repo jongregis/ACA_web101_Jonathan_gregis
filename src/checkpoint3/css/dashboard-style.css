@@ -1,0 +1,406 @@
+.container {
+  display: grid;
+  grid-template-columns: 30% 1fr 1fr;
+  grid-template-rows: 300px 1fr 1fr 1fr;
+  grid-template-areas:
+    "sidebar header header"
+    "sidebar main main"
+    "sidebar footer footer"
+    "game game game";
+}
+
+.header {
+  border-bottom: none;
+  display: flex;
+  flex-wrap: wrap;
+  /* border: 1px solid black; */
+  grid-area: header;
+  background-color: #c4c4c4;
+}
+
+.main {
+  grid-area: main;
+  background-color: #c4c4c4;
+}
+
+.clock {
+  border-radius: 10px;
+  box-shadow: 1px 5px 5px 0 black;
+  margin: auto;
+  width: 250px;
+  height: 100px;
+  background: white;
+  font-size: 4em;
+  color: #707070;
+  line-height: 100px;
+  background-image: linear-gradient(#f0f0f0, white);
+}
+
+.footer {
+  grid-area: footer;
+  background-color: rgb(196, 196, 196);
+}
+
+.sidebar {
+  background-color: rgb(206, 205, 205);
+  border: 1px solid black;
+  grid-area: sidebar;
+}
+.game {
+  grid-area: game;
+  display: flex;
+  justify-content: center;
+  padding-top: 20px;
+}
+
+/* this is the greeting section---------------------------------------------- */
+
+.greeting h1 {
+  font-size: 40px;
+  padding-left: 10px;
+  text-decoration: underline;
+  float: left;
+}
+
+.greeting span {
+  float: left;
+  font-style: italic;
+  margin-left: 10%;
+  font-size: 20px;
+}
+.location {
+  /* border: 1px solid black; */
+  float: right;
+  margin-right: 50px;
+  position: relative;
+  top: 20px;
+}
+
+.location button {
+  font-size: 20px;
+  box-shadow: 0 0 5px 1px black;
+}
+.location button:hover {
+  background: #666;
+  color: whitesmoke;
+}
+.location p {
+  font-size: 15px;
+  color: white;
+}
+
+/* this is the calender section------------------------------------------- */
+
+ul {
+  list-style-type: none;
+}
+
+/* Month header */
+.month {
+  padding: 70px 25px;
+  width: auto;
+  background: #550ae4;
+  text-align: center;
+}
+
+/* Month list */
+.month ul {
+  margin: 0;
+  padding: 0;
+}
+
+.month ul li {
+  color: white;
+  font-size: 20px;
+  text-transform: uppercase;
+  letter-spacing: 3px;
+}
+
+/* Previous button inside month header */
+.month .prev {
+  float: left;
+  padding-top: 10px;
+}
+
+/* Next button */
+.month .next {
+  float: right;
+  padding-top: 10px;
+}
+
+/* Weekdays (Mon-Sun) */
+.weekdays {
+  margin: 0;
+  padding: 10px 0;
+  background-color: #ddd;
+}
+
+.weekdays li {
+  display: inline-block;
+  width: 13.6%;
+  color: #666;
+  text-align: center;
+}
+
+/* Days (1-31) */
+.days {
+  padding: 10px 0;
+  background: #eee;
+  margin: 0;
+}
+
+.days li {
+  list-style-type: none;
+  display: inline-block;
+  width: 13.6%;
+  text-align: center;
+  margin-bottom: 5px;
+  font-size: 12px;
+  color: #777;
+}
+
+/* Highlight the "current" day */
+.days li .active {
+  padding: 5px;
+  background: #1d1abca8;
+  color: white !important;
+}
+
+/* This is where the sidebar starts------------------------------------------------ */
+
+.sidebar ul li {
+  box-shadow: 1px 5px 5px 0 black;
+  margin-right: 40px;
+  cursor: pointer;
+  position: relative;
+  padding: 12px 8px 12px 40px;
+  background: rgb(184, 181, 181);
+  font-size: 18px;
+  transition: 0.2s;
+
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+.sidebar ul li:nth-child(odd) {
+  background: #dfdbdb;
+}
+
+ul li:hover {
+  background: rgb(168, 114, 114);
+}
+
+ul li.checked {
+  background: #888;
+  color: #fff;
+  text-decoration: line-through;
+}
+
+ul li.checked::before {
+  content: "";
+  position: absolute;
+  border-color: rgb(219, 209, 209);
+  border-style: solid;
+  border-width: 0 2px 2px 0;
+  top: 10px;
+  left: 16px;
+  transform: rotate(45deg);
+  height: 15px;
+  width: 7px;
+}
+
+/* Style the close button */
+.close {
+  position: absolute;
+  right: 0;
+  top: 0;
+  padding: 12px 16px 12px 16px;
+}
+
+.close:hover {
+  background-color: #f44336;
+  color: white;
+}
+
+/* Style the header */
+.header-two {
+  background-color: #550ae4;
+  padding: 30px 40px;
+  color: white;
+  text-align: center;
+}
+
+#myDIV h2 {
+  font-size: 40px;
+  margin-top: -20px;
+}
+
+/* Clear floats after the header */
+.header-two:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Style the input */
+input {
+  box-shadow: 1px 5px 5px 0 black;
+  margin: 0;
+  border: none;
+  border-radius: 0;
+  width: 75%;
+  padding: 10px;
+  float: left;
+  font-size: 16px;
+}
+
+/* Style the "Add" button */
+.addBtn {
+  box-shadow: 1px 5px 5px 0 black;
+  padding: 10px;
+  width: 25%;
+  background: #d9d9d9;
+  color: #555;
+  float: left;
+  text-align: center;
+  font-size: 16px;
+  cursor: pointer;
+  transition: 0.3s;
+  border-radius: 0;
+}
+
+.addBtn:hover {
+  background-color: #bbb;
+}
+
+/* this is where the calculator begins-------------------------------------------------- */
+
+.calculator {
+  max-width: 300px;
+  background-color: #86838b;
+
+  margin: 0 auto;
+  margin-top: 10px;
+  border: 2px solid #111;
+  border-radius: 10px;
+  margin-bottom: 10px;
+  box-shadow: 1px 5px 5px 0 black;
+}
+
+.calculator input {
+  border-radius: 5px;
+  text-align: right;
+  font-size: 40px;
+  background: #d1cfd4;
+  border: none;
+  box-shadow: 0 5px 5px 0 black;
+  width: 93%;
+  border-bottom: 2px solid #111;
+}
+
+.calc-buttons {
+  background: rgba(0, 0, 0, 0.5);
+  border: 1px solid #111;
+  padding: 20px;
+  color: #eee;
+  border-radius: 5px;
+  font-size: 22px;
+  cursor: pointer;
+  box-shadow: 0 3px 3px 0 black;
+}
+
+.calculator-buttons {
+  display: grid;
+  padding: 20px;
+  grid-template-columns: 1fr 1fr 1fr 1fr;
+  grid-gap: 10px;
+}
+
+.is-clear,
+.is-zero {
+  grid-column: span 3;
+}
+
+/* -------------------------------------------------------------this is where the game starts */
+.game-container {
+  display: flex;
+  justify-content: center;
+
+  height: 500px;
+  width: 800px;
+  border: 1px solid black;
+}
+.maze-block {
+  border: 1px solid black;
+  height: 123px;
+  width: 123px;
+}
+#player {
+  position: absolute;
+
+  /* object-fit: contain; */
+  width: 50px;
+  height: 50px;
+  border: 1px solid red;
+}
+
+/* Media queries start here------------------------------------------------------ */
+
+@media (max-width: 767px) and (min-width: 320px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+  .greeting h1 {
+    text-align: center;
+    font-size: 40px;
+    /* padding-left: 10px; */
+    text-decoration: underline;
+  }
+
+  .greeting span {
+    text-align: center;
+    font-style: italic;
+
+    font-size: 18px;
+  }
+}
+
+@media (min-width: 768px) and (max-width: 1000px) {
+  .container {
+    display: grid;
+    grid-template-columns: 1fr;
+    grid-template-rows: 300px 1fr 1fr 1fr;
+    grid-template-areas:
+      "header"
+      "main"
+      "sidebar"
+      "footer";
+  }
+
+  .greeting h1 {
+    text-align: center;
+    font-size: 40px;
+    padding-left: 10px;
+    text-decoration: underline;
+  }
+
+  .greeting span {
+    font-style: italic;
+    margin-left: 27%;
+    font-size: 20px;
+  }
+  header {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+}
