@@ -327,23 +327,110 @@ input {
 .game-container {
   display: flex;
   justify-content: center;
+  background: url(../images/super-mario-bros-platform-game-on-a-green-screen-background_vys_zen4g__F0000.png);
+  background-size: cover;
 
   height: 500px;
   width: 800px;
   border: 1px solid black;
 }
 .maze-block {
-  border: 1px solid black;
+  border: 1px solid red;
   height: 123px;
   width: 123px;
 }
+.music {
+  height: 40px;
+  width: 40px;
+  margin-right: 100px;
+  text-align: center;
+}
 #player {
   position: absolute;
+  left: 650px;
+  bottom: -970px;
 
   /* object-fit: contain; */
   width: 50px;
   height: 50px;
   border: 1px solid red;
+}
+#queen {
+  width: 50px;
+  height: 50px;
+  position: absolute;
+  right: 180px;
+  bottom: -1100px;
+}
+#b-three {
+  border-left: none;
+  border-right: none;
+}
+#b-seven {
+  border-left: none;
+  border-top: none;
+  border-bottom: none;
+}
+#b-six {
+  border-bottom: none;
+  border-top: none;
+}
+#b-five {
+  border-bottom: none;
+  border-left: none;
+  border-right: none;
+}
+#b-one {
+  border-left: 2px solid red;
+  border-right: none;
+  border-bottom: none;
+}
+#b-two {
+  border-left: 2px solid red;
+  border-top: none;
+}
+#b-eight {
+  border-top: none;
+  border-right: none;
+  border-left: none;
+}
+#b-four {
+  border-left: 2px solid red;
+  border-right: none;
+}
+#b-twelve {
+  border-left: none;
+  border-right: none;
+}
+#b-sixteen {
+  border-right: 2px solid red;
+  border-left: none;
+  border-top: none;
+}
+#b-fifteen {
+  border-right: 2px solid red;
+  border-bottom: none;
+  border-top: none;
+}
+#b-fourteen {
+  border-bottom: none;
+  border-right: none;
+}
+#b-nine {
+  border-left: none;
+  border-right: none;
+  border-bottom: none;
+}
+#b-thirteen {
+  border-right: 2px solid red;
+  border-left: none;
+}
+#b-ten {
+  border-top: none;
+  border-bottom: none;
+}
+#b-eleven {
+  border-top: none;
 }
 
 /* Media queries start here------------------------------------------------------ */

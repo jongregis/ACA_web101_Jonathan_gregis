@@ -113,4 +113,23 @@ $(document).keydown(function(e) {
       $("#player").css("top", position.top + 20 + "px");
       break;
   }
+  window.addEventListener(
+    "keydown",
+    function(e) {
+      // space and arrow keys
+      if ([32, 37, 38, 39, 40].indexOf(e.keyCode) > -1) {
+        e.preventDefault();
+      }
+    },
+    false
+  );
 });
+
+function playMusic() {
+  var x = document.getElementById("marioMusic");
+  x.play();
+}
+function pauseMusic() {
+  var x = document.getElementById("marioMusic");
+  x.pause();
+}

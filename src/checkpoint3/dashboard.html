@@ -117,33 +117,37 @@
         </ul>
       </div>
       <div class="game">
-        
+          <button class="music" onclick="playMusic()">Play Music</button>
+          <button class="music" onclick="pauseMusic()">Pause Music</button>
         <div class="game-container">
           <img src="images/mario.png" id="player" alt="">
+          <img src="images/princess.png" id="queen" alt="">
+          
+          <audio id="marioMusic" src="images/06 - Underground.mp3"></audio>
           
           <div class="maze-row">
-            <div class="maze-block">1</div>
-            <div class="maze-block">2</div>
-            <div class="maze-block">3</div>
-            <div class="maze-block">4</div>
+            <div class="maze-block" id="b-one"></div>
+            <div class="maze-block" id="b-two"></div>
+            <div class="maze-block" id="b-three"></div>
+            <div class="maze-block" id="b-four"></div>
           </div>
           <div class="maze-row">
-              <div class="maze-block">5</div>
-              <div class="maze-block">6</div>
-              <div class="maze-block">7</div>
-              <div class="maze-block">8</div>
+              <div class="maze-block" id="b-five"></div>
+              <div class="maze-block" id="b-six"></div>
+              <div class="maze-block" id="b-seven"></div>
+              <div class="maze-block" id="b-eight"></div>
             </div>
             <div class="maze-row">
-                <div class="maze-block">9</div>
-                <div class="maze-block">10</div>
-                <div class="maze-block">11</div>
-                <div class="maze-block">12</div>
+                <div class="maze-block" id="b-nine"></div>
+                <div class="maze-block" id="b-ten"></div>
+                <div class="maze-block" id="b-eleven"></div>
+                <div class="maze-block" id="b-twelve"></div>
               </div>
               <div class="maze-row">
-                  <div class="maze-block">13</div>
-                  <div class="maze-block">14</div>
-                  <div class="maze-block">15</div>
-                  <div class="maze-block">16</div>
+                  <div class="maze-block" id="b-thirteen"></div>
+                  <div class="maze-block" id="b-fourteen"></div>
+                  <div class="maze-block" id="b-fifteen"></div>
+                  <div class="maze-block" id="b-sixteen"></div>
                 </div>
         </div>
       </div>
